@@ -85,6 +85,10 @@ body {
 	color: var(--accent-color);
 }
 
+.header-nav-list .link:active {
+	color: crimson;
+}
+
 /* Контакти */
 .contacts-list-item .link {
 	color: inherit;
@@ -256,4 +260,129 @@ body {
 	color: var(--primary-text-color);
 	font-size: 16px;
 	line-height: 1.88;
+}
+
+/* Ховер і таблиці */
+
+.schedule-body > tr:hover {
+	background-color: tomato;
+	color: white;
+}
+
+/* Оформлення таблиці */
+.schedule {
+	border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+	padding: 8px;
+	border: 1px solid #212121;
+}
+
+/* Властивість text-transform */
+.site-nav .link {
+	text-transform: uppercase;
+}
+/* Властивість text-align */
+
+.post-title {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+/* Властивість text-indent */
+.post-text {
+	text-indent: 100px;
+}
+
+/* Властивість text-shadow */
+/* text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір> */
+
+.title {
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.title {
+	color: #ffffff;
+	text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
+
+.rainbow {
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.rainbow-r {
+	color: red;
+	text-shadow: 2px 10px 20px #ff0000;
+}
+
+.rainbow-a {
+	color: orange;
+	text-shadow: 2px 10px 20px orange;
+}
+
+.rainbow-i {
+	color: yellow;
+	text-shadow: 2px 10px 20px yellow;
+}
+
+.rainbow-n {
+	color: green;
+	text-shadow: 2px 10px 20px green;
+}
+
+.rainbow-b {
+	color: blue;
+	text-shadow: 2px 10px 20px blue;
+}
+
+.rainbow-o {
+	color: rgb(0, 0, 88);
+	text-shadow: 2px 10px 20pxr rgb(0, 0, 88);
+}
+
+.rainbow-w {
+	color: purple;
+	text-shadow: 2px 10px 20px purple;
+}
+/* Псевдоелемент ::first-letter */
+pre {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #2a2a2a;
+	font-size: 16px;
+}
+
+pre::first-letter {
+	font-family: "Tahoma", serif;
+	font-size: 32px;
+	color: #f44336;
+}
+
+/* Псевдоелемент ::selection */
+pre {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #2a2a2a;
+	font-size: 16px;
+}
+
+pre::first-letter {
+	font-family: "Tahoma", serif;
+	font-size: 32px;
+	color: green;
+}
+
+/* Let's add text selection styles for each paragraph of the poem. */
+pre::selection {
+	color: yellow;
+	background-color: red;
 }
